@@ -1,0 +1,18 @@
+public class CodeCreatorsPlayingClass {
+    public static void main(String[] args) {
+        String[] names = {"Nasser", "Haitham", "Manal", "Hanin"};
+
+        for (String stringToReverse : names) {
+            StringBuilder reversedString = new StringBuilder();
+            int length = stringToReverse.length();
+            int lastIndex = length - 1;
+
+            for (int i = lastIndex; i >= 0; i--) {
+                char c = stringToReverse.charAt(i);
+                reversedString.append(c);
+            }
+
+            System.out.print(reversedString + " ");
+        }
+    }
+}
